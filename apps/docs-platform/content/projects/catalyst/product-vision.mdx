@@ -1,0 +1,90 @@
+---
+title: "Catalyst — Product Vision"
+---
+
+# Catalyst — Product Vision
+
+> The deal flow OS for Web3 venture capital.
+
+---
+
+## Core Product: PitchScan AI
+
+Upload any pitch deck (PDF) and get a comprehensive analysis from **10 simulated VC personas** in under 10 seconds.
+
+| Analysis Layer | What It Does |
+|---------------|-------------|
+| **Key Info Extraction** | OCR + AI extracts company name, raise, valuation, vertical, team, socials |
+| **VC Committee** | 10 personas evaluate independently (seed specialist, growth VC, technical VC, etc.) |
+| **Consensus Score** | 0-10 weighted score with majority vote: INVEST / PASS / CONSIDER |
+| **Deep Reasoning** | 6-dimension analysis: Problem/Solution, Team, Market Size, Market Interest, Competition, GTM |
+| **Highlights & Risks** | Key strengths and red flags surfaced automatically |
+| **Meta Analysis** | Committee synthesis with actionable recommendation |
+
+**Parameters**: model gpt-4.1-mini, reasoning_effort medium, include_due_diligence true, max_personas 10.
+
+---
+
+## Competitive Intelligence (Surf AI)
+
+| Template | Response Time | Quality |
+|----------|-------------|---------|
+| Competitor Overview | 3-8s | Good |
+| Twitter Analysis | 2-4s | Excellent |
+| Market News | 2-4s | Good |
+| Funding Intelligence | 2-5s | Excellent |
+
+Deep Research powered by Surf AI provides real-time competitive intelligence on any company.
+
+---
+
+## Platform Architecture
+
+**4 Input Sources** feed into a unified PitchScan pipeline:
+
+| Source | Entry Point | Flow |
+|--------|------------|------|
+| Startup Dashboard | `/dashboard/startup/pitch-decks` | Upload PDF, async analysis, publish to deal flow |
+| Investor Analytics | `/dashboard/investor/analytics` | Upload PDF, instant 10-persona analysis |
+| Telegram Bot | Group message with DocSend URL | Auto-detect, download via docsend2pdf, analyze, post results |
+| Admin Dashboard | Internal | Manual trigger, full access |
+
+All sources create: DealQueue entry (tracking) + Startup draft (pipeline) + Analysis record.
+
+---
+
+## Automated Agents (6 Active)
+
+| Agent | Schedule | Function |
+|-------|----------|----------|
+| **OTC Scraper** | Every 6 hours | Scrapes OTC market data for token deals |
+| **Funding Rounds** | Daily | Tracks new Web3 funding announcements |
+| **Twitter Scanner** | Hourly | Monitors crypto Twitter for deal signals |
+| **Hackathon Tracker** | Weekly (Sunday 3h UTC) | Finds promising hackathon projects |
+| **VC Contact Scraper** | On-demand | Builds investor contact database |
+| **Dealflow Inbox** | Real-time | Gmail watcher that auto-processes incoming pitch decks |
+
+---
+
+## Additional Features
+
+| Feature | Description |
+|---------|------------|
+| **Investor Database** | 6,500+ crypto VCs and angels with filters (thesis, check size, vertical) |
+| **CRM** | Track outreach, conversations, and pipeline (built for fundraising, not generic) |
+| **Tokenomics Studio** | Design token distribution, vesting schedules, stress testing |
+| **Warm Intros** | Get introduced to relevant investors through the platform |
+| **Legal Services** | Partner discounts (Legal Nodes) for SAFT, incorporation, token structure |
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | Next.js (Netlify) |
+| Database | Supabase (PostgreSQL) + Prisma ORM |
+| AI Analysis | PitchScan API (Railway), GPT-4.1-mini |
+| Doc Processing | DocSend Service (Railway), PyMuPDF, OCR |
+| Agents | Python (GitHub Actions scheduled workflows) |
+| Monitoring | GitHub Actions logs, Supabase dashboard |

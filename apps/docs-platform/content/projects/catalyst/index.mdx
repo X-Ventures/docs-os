@@ -1,0 +1,57 @@
+---
+title: "Catalyst — Data Room"
+---
+
+# Catalyst
+
+> The deal flow OS for Web3 venture capital.
+
+| Metric | Value |
+|--------|-------|
+| **Stage** | MVP / Beta |
+| **Sector** | Web3 / VC Tech |
+| **Live URL** | catalyst3.xyz |
+| **Stack** | Next.js + Supabase + Prisma + Python |
+| **VC Database** | 6,500+ crypto VCs and angels |
+| **Automated Agents** | 6 active |
+| **Repo** | X-Ventures/catalyst-mvp (private) |
+
+---
+
+## TL;DR (2-Minute Overview)
+
+Catalyst is a **deal flow operating system for Web3 investors and founders**. Think Bloomberg Terminal meets AngelList, purpose-built for crypto venture. Founders upload pitch decks and get AI-powered analysis from 10 simulated VC personas (PitchScan). Investors access curated, AI-scored deal flow filtered by vertical, stage, and quality. The platform includes competitive intelligence (Surf AI), a CRM for fundraising, tokenomics tools, and 6 automated agents that scan the market 24/7.
+
+**Business model**: Freemium SaaS (Founder Free/Pro $29/Enterprise $99 + Investor Free/Pro $300/Institutional $1,000) plus transaction fees, promoted placements, data products, and partner revenue share.
+
+**Competitive edge**: Only platform combining AI pitch analysis + curated Web3 deal flow + competitive intelligence + CRM in one product. 6,500+ investor database gives immediate distribution advantage.
+
+---
+
+## Data Room Contents
+
+| Document | Section | Source |
+|----------|---------|--------|
+| [Executive Memo](/projects/catalyst/executive-memo) | Thesis, metrics, recommendation | Generated from repo |
+| [Product Vision](/projects/catalyst/product-vision) | PitchScan, agents, architecture | Repo README + architecture docs |
+| [Brand Strategy](/projects/catalyst/brand-strategy) | Positioning, messaging, target | Generated |
+| [Business Model](/projects/catalyst/business-model) | 12 revenue streams, pricing | Repo monetization doc |
+| [Market Analysis](/projects/catalyst/market-analysis) | TAM/SAM/SOM, trends, comps | Generated |
+| [Competitive Landscape](/projects/catalyst/competitive-landscape) | 6 categories, positioning | Repo audit + generated |
+| [Financial Model](/projects/catalyst/financial-model) | Projections, unit economics | Repo monetization doc |
+| [ROI Model](/projects/catalyst/roi-scenarios) | 3 scenarios, sensitivity | Generated |
+| [OKRs](/projects/catalyst/okrs) | 30-day + 90-day objectives | Generated |
+| [Pitch Deck](/projects/catalyst/pitch-deck) | Slide outline (deck TBD) | Generated |
+| [Data Room Checklist](/projects/catalyst/completeness) | Completeness audit | Auto-generated |
+
+---
+
+## Key Risk Summary
+
+| Risk | Severity | Mitigation |
+|------|----------|------------|
+| Scan endpoint timeouts (30s+) on Netlify | High | Move to background job architecture |
+| AI categorization quality (87% "OTHER") | Medium | Refine prompts, add confidence scores |
+| No input validation / rate limiting | Medium | Add validation middleware (P0 fix) |
+| Web3 market volatility affecting deal flow | Medium | Multi-vertical support, not crypto-only |
+| Competition from well-funded incumbents | Low | AI-native advantage, Web3 specialization |

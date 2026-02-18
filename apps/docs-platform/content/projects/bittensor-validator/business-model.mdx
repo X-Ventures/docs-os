@@ -1,0 +1,81 @@
+---
+title: "Bittensor Validator — Business Model"
+---
+
+# Bittensor Validator — Business Model
+
+---
+
+## Revenue: TAO Emissions
+
+Validators earn TAO through **Yuma Consensus emissions**. The validator share is **41% of total subnet emissions**.
+
+| Metric | Value |
+|--------|-------|
+| Validator emission share | 41% |
+| Median validator APY | 5.5% |
+| Top-tier validator APY | 6.5%+ |
+| Delegation take rate (standard) | 18% |
+
+Revenue is denominated in TAO and subject to token price fluctuation.
+
+---
+
+## Cost Structure
+
+### Three Operating Strategies
+
+| Strategy | Monthly OPEX | Description |
+|----------|-------------|-------------|
+| Weight Copying | $2,100/mo | Copy scores from top validators. Minimal compute. CPU-only server. |
+| Real Validation | $4,800/mo | Run actual inference on compute-heavy subnets. Requires GPU. |
+| **Hybrid (Recommended)** | **$3,200/mo** | Weight-copy on most subnets, real-validate on 3–5 strategic subnets. |
+
+### OPEX Breakdown (Hybrid Strategy)
+
+| Cost Item | Monthly |
+|-----------|---------|
+| Bare metal server (Hetzner AX102) | $1,800 |
+| GPU compute (spot/reserved) | $800 |
+| Monitoring and alerting tools | $200 |
+| Subnet registration fees (amortized) | $200 |
+| Operational overhead (maintenance) | $200 |
+| **Total** | **$3,200** |
+
+---
+
+## Break-Even Analysis
+
+Break-even depends on TAO price and stake size:
+
+| TAO Price | Minimum Stake for Break-Even (at 5.5% APY) | Monthly Yield |
+|-----------|---------------------------------------------|---------------|
+| $100 | 7,000 TAO | $3,208 |
+| $150 | 4,700 TAO | $3,225 |
+| $194 (current) | 3,500 TAO | $3,213 |
+| $300 | 2,300 TAO | $3,225 |
+| $500 | 1,400 TAO | $3,208 |
+
+**Minimum viable stake: ~3,500 TAO** at current prices to cover $3,200/mo hybrid OPEX.
+
+---
+
+## Yield Scenarios (Annual, 10K TAO Staked)
+
+| TAO Price | Annual Yield (TAO) | Annual Yield (USD) | Net After OPEX |
+|-----------|-------------------|-------------------|----------------|
+| $100 | 550 TAO | $55,000 | $16,600 |
+| $194 | 550 TAO | $106,700 | $68,300 |
+| $300 | 550 TAO | $165,000 | $126,600 |
+| $500 | 550 TAO | $275,000 | $236,600 |
+
+---
+
+## Revenue Enhancement Opportunities
+
+| Opportunity | Description | Impact |
+|------------|-------------|--------|
+| Delegation | Attract external TAO delegation, earn take rate | Increases effective stake without capital |
+| Subnet Selection | Focus on high-emission subnets | Higher APY |
+| Real Validation Premium | Accurate real validation earns consensus bonuses | 10–20% yield uplift |
+| Strategic Subnets | Early entry into new subnets with high emission | Outsized early returns |

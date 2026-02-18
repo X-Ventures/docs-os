@@ -1,7 +1,14 @@
 export default {
   index: 'Overview',
-  blueprint: 'Operating Blueprint',
-  'okrs-30d': 'OKRs — 30 Day',
-  'okrs-90d': 'OKRs — 90 Day',
-  appendix: 'Downloads',
+  'executive-memo': 'Executive Memo',
+  'product-vision': 'Product Vision',
+  'brand-strategy': 'Brand Strategy',
+  'business-model': 'Business Model',
+  'market-analysis': 'Market Analysis',
+  'competitive-landscape': 'Competitive Landscape',
+  'financial-model': 'Financial Model',
+  'roi-scenarios': 'ROI Model & Scenarios',
+  okrs: 'OKRs',
+  'pitch-deck': 'Pitch Deck',
+  completeness: 'Data Room Checklist',
 }

@@ -1,0 +1,91 @@
+---
+title: "Bittensor Validator — Product Vision"
+---
+
+# Bittensor Validator — Product Vision
+
+---
+
+## What Is a Bittensor Validator?
+
+A Bittensor validator is a node in the Bittensor network that **evaluates the quality of work** produced by miners across subnets. Validators stake TAO tokens and earn a share of network emissions as compensation for honest, accurate evaluation.
+
+Validators are the quality layer of Bittensor — without them, miners have no incentive to produce useful AI outputs.
+
+---
+
+## How It Works
+
+### Yuma Consensus
+
+Bittensor uses **Yuma Consensus** to distribute emissions. Validators score miners on each subnet, and the network aggregates these scores to determine emission splits:
+
+| Role | Emission Share |
+|------|---------------|
+| Validators | 41% of subnet emissions |
+| Miners | 41% of subnet emissions |
+| Subnet Owners | 18% of subnet emissions |
+
+Validators that produce scores aligned with the consensus earn more. Outlier scores are penalized.
+
+### Staking and Delegation
+
+- Validators must stake TAO to participate
+- Other TAO holders can **delegate** their stake to validators, increasing the validator's weight
+- Delegators earn a share of the validator's emissions (minus the validator's take rate, typically 18%)
+
+---
+
+## Why It Matters
+
+### Position in the AI/Crypto Ecosystem
+
+Bittensor is the leading decentralized AI network. Running a validator provides:
+
+1. **Direct exposure to AI/crypto convergence** — the highest-growth sector in Web3
+2. **Yield generation** — TAO staking yields median 5.5% APY, with top validators earning over 6%
+3. **Early mover advantage** — validator slots and delegation relationships compound over time
+4. **Network intelligence** — deep visibility into which AI subnets are producing real value
+
+### Strategic Value to Xventures
+
+- Generates yield on TAO holdings
+- Provides on-chain intelligence about the Bittensor ecosystem
+- Positions Xventures as an infrastructure player, not just a speculator
+
+---
+
+## Technical Requirements
+
+### Hardware
+
+| Component | Specification |
+|-----------|--------------|
+| Server | Bare metal (Hetzner AX102 recommended) |
+| CPU | AMD EPYC / Intel Xeon (16+ cores) |
+| RAM | 128GB+ |
+| Storage | 2TB NVMe SSD |
+| GPU | NVIDIA A100/H100 (for real validation on compute subnets) |
+| Network | 1Gbps dedicated, low latency |
+
+### Software Stack
+
+| Layer | Technology |
+|-------|-----------|
+| OS | Ubuntu 22.04 LTS |
+| Runtime | Python 3.10+, Bittensor SDK |
+| Wallet | Coldkey (offline) + Hotkey (online) |
+| Monitoring | Prometheus + Grafana, custom alerts |
+| Subnet Registration | btcli commands per subnet |
+
+### Wallet Architecture
+
+- **Coldkey**: Master key, stored offline (hardware wallet recommended). Controls staking, unstaking, and transfers.
+- **Hotkey**: Operational key, lives on the server. Signs validation scores and interacts with subnets.
+- Separation ensures that server compromise does not risk staked TAO.
+
+---
+
+## Vision
+
+Operate a top-50 Bittensor validator with a hybrid strategy (weight copying + selective real validation), earning consistent yield while building delegation relationships and deep network intelligence.
