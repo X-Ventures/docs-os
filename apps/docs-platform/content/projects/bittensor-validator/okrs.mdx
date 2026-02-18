@@ -1,0 +1,82 @@
+---
+title: "Bittensor Validator — OKRs (30 Day)"
+description: "30-day objectives and key results for launching and stabilizing a Bittensor validator operation."
+---
+
+# Bittensor Validator — OKRs (30 Day)
+
+> **North Star:** Launch a Bittensor validator that achieves stable emissions within 30 days, with monitoring in place and a clear path to operational break-even.
+
+---
+
+## O1 — Infrastructure & Setup
+
+**Objective:** Stand up production validator infrastructure with full monitoring and failover capability.
+
+| KR | Key Result | Target | Definition of Done | Frequency |
+| --- | --- | --- | --- | --- |
+| KR1.1 | Provision and configure Hetzner AX102 server | Day 3 | Server live, SSH hardened, firewall configured, Bittensor installed | Once |
+| KR1.2 | Bittensor node fully synced | Day 5 | Node at head block, subtensor running, validator registered on chain | Once |
+| KR1.3 | Monitoring stack deployed | Day 7 | Grafana dashboards live, Prometheus scraping metrics, PagerDuty alerts configured for downtime, missed blocks, and VTrust drops | Once |
+| KR1.4 | Achieve 99.9% uptime | ≥99.9% | Less than 43 minutes downtime in 30 days. Measured from monitoring stack. | Daily |
+
+---
+
+## O2 — Monitoring & Operations
+
+**Objective:** Establish operational processes that ensure validator health, performance, and rapid incident response.
+
+| KR | Key Result | Target | Definition of Done | Frequency |
+| --- | --- | --- | --- | --- |
+| KR2.1 | Missed blocks per day | Under 5 blocks/day | Validator misses fewer than 5 blocks per day on average over trailing 7 days | Daily |
+| KR2.2 | VTrust score | ≥0.85 | Validator VTrust ≥0.85 on all registered subnets (measured via Taostats) | Weekly |
+| KR2.3 | Incident response time | Under 15 min | Time from PagerDuty alert to operator acknowledgment. All P1 incidents resolved within 2 hours. | Per incident |
+| KR2.4 | Runbook coverage | 100% | Written runbooks for: startup/shutdown, weight copying, subnet registration, key rotation, emergency failover, backup/restore | Day 14 |
+
+---
+
+## O3 — Acquisition & Staking
+
+**Objective:** Acquire and deploy TAO stake to begin earning emissions on target subnets.
+
+| KR | Key Result | Target | Definition of Done | Frequency |
+| --- | --- | --- | --- | --- |
+| KR3.1 | TAO acquisition complete | 5,000 TAO | All TAO acquired (spot + OTC). Custody in cold wallet with documented key management. | Day 10 |
+| KR3.2 | Stake deployed to root network | 100% of target | Full stake amount registered on root network, validator visible on Taostats | Day 12 |
+| KR3.3 | Subnet registrations complete | ≥5 subnets | Validator registered on minimum 5 target subnets (SN64, SN32, SN45, SN19, SN4 as priority) | Day 14 |
+| KR3.4 | First emissions received | Confirmed | At least one full emission cycle completed with TAO rewards received and verified | Day 16 |
+
+---
+
+## O4 — Intelligence & Veille
+
+**Objective:** Build ongoing intelligence capability to monitor network changes, risks, and opportunities.
+
+| KR | Key Result | Target | Definition of Done | Frequency |
+| --- | --- | --- | --- | --- |
+| KR4.1 | Weekly intelligence brief | 4 briefs in 30 days | Written brief covering: TAO price, emission changes, subnet health, Commit Reveal status, governance proposals, competitor moves | Weekly |
+| KR4.2 | Commit Reveal monitoring | Real-time | Automated or manual check for Commit Reveal activation on all registered subnets. Alert within 1 hour of activation. | Daily |
+| KR4.3 | Community engagement | Active | At minimum: joined Bittensor Discord, subscribed to governance forum, following 5+ key validators on X/Twitter. First community interaction completed. | Ongoing |
+
+---
+
+## OKR Summary
+
+| Objective | KRs | Critical KRs |
+| --- | --- | --- |
+| O1 — Infrastructure & Setup | 4 | KR1.4 (uptime) |
+| O2 — Monitoring & Operations | 4 | KR2.2 (VTrust), KR2.3 (incident response) |
+| O3 — Acquisition & Staking | 4 | KR3.1 (TAO acquired), KR3.4 (first emissions) |
+| O4 — Intelligence & Veille | 3 | KR4.2 (Commit Reveal monitoring) |
+| **Total** | **15 KRs** | **5 Critical** |
+
+---
+
+## 30-Day Timeline
+
+| Week | Focus | Key Milestones |
+| --- | --- | --- |
+| **Week 1** (D1-7) | Infrastructure | Server live, node synced, monitoring deployed |
+| **Week 2** (D8-14) | Staking & Registration | TAO acquired, staked, 5+ subnets registered |
+| **Week 3** (D15-21) | Stabilization | First emissions, runbooks complete, VTrust stable |
+| **Week 4** (D22-30) | Review & Decision | Performance review, 30-day P&L, Go/No-Go for Phase 2 |
