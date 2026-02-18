@@ -1,0 +1,12 @@
+{
+  "name": "docs-os",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd apps/docs-platform && npm run dev",
+    "build": "cd apps/docs-platform && npm run build",
+    "start": "cd apps/docs-platform && npm run start",
+    "generate": "node scripts/generate-project-docs.mjs",
+    "sync": "node scripts/drive-sync.mjs"
+  }
+}

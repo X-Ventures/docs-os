@@ -1,0 +1,57 @@
+:root {
+  --docs-primary: #0066ff;
+  --docs-bg: #ffffff;
+  --docs-text: #111827;
+  --docs-muted: #6b7280;
+  --docs-border: #e5e7eb;
+  --docs-card-bg: #f9fafb;
+}
+
+.dark {
+  --docs-primary: #3b82f6;
+  --docs-bg: #0a0a0a;
+  --docs-text: #f9fafb;
+  --docs-muted: #9ca3af;
+  --docs-border: #1f2937;
+  --docs-card-bg: #111827;
+}
+
+.project-card {
+  border: 1px solid var(--docs-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: var(--docs-card-bg);
+  transition: all 0.2s;
+}
+.project-card:hover {
+  border-color: var(--docs-primary);
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.08);
+}
+
+.metric-card {
+  background: var(--docs-card-bg);
+  border: 1px solid var(--docs-border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+.metric-card .label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--docs-muted);
+}
+.metric-card .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--docs-text);
+}
+
+.badge { display: inline-block; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+.badge-active { background: #dcfce7; color: #166534; }
+.badge-archived { background: #f3f4f6; color: #6b7280; }
+.badge-internal { background: #dbeafe; color: #1e40af; }
+.badge-investor { background: #fef3c7; color: #92400e; }
+.dark .badge-active { background: #166534; color: #dcfce7; }
+.dark .badge-archived { background: #374151; color: #9ca3af; }
+.dark .badge-internal { background: #1e3a5f; color: #93c5fd; }
+.dark .badge-investor { background: #78350f; color: #fef3c7; }
