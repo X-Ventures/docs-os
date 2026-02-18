@@ -1,6 +1,6 @@
 export default {
   index: {
-    title: 'Home',
+    title: 'XLabs',
     type: 'page',
   },
   projects: {

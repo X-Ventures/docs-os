@@ -6,15 +6,15 @@ import './globals.css'
 
 export const metadata = {
   title: {
-    default: 'Docs OS — XLabs Data Room',
-    template: '%s — Docs OS',
+    default: 'XLabs — Venture Operating System',
+    template: '%s — XLabs',
   },
-  description: 'Investor-grade data rooms powered by Docs OS',
+  description: 'XLabs — The venture operating system powering Xventures',
 }
 
 const navbar = (
   <Navbar
-    logo={<span style={{ fontWeight: 800, fontSize: '1.1rem' }}>Docs OS</span>}
+    logo={<span style={{ fontWeight: 800, fontSize: '1.1rem' }}>XLabs</span>}
     projectLink="https://github.com/X-Ventures/docs-os"
   />
 )
